@@ -1,0 +1,24 @@
+class Archivo:
+    def __init__(self, nombre_archivo: str):
+        self.arreglo = []
+        self.nombre_archivo = nombre_archivo
+    
+    def abrir(self):
+        with open(self.nombre_archivo, 'r', encoding='UTF-8') as archivo:
+            for linea in archivo:
+                partes = linea.strip().split(',')
+                self.arreglo.append(partes)                
+        
+    
+    def cerrar(self):
+        # self.close()
+        pass
+        
+    def mostrar(self):
+        return self.arreglo
+
+
+if __name__== '__main__':
+    archivo = Archivo('Producto.txt')
+    archivo.abrir()
+    print(archivo.mostrar())

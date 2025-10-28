@@ -1,0 +1,6 @@
+1,Libro,20
+2,Cuaderno,5.5
+3,Lapiz,1.5
+4,Papel,0.1
+5,Cuates,1.0
+6,Cifrut,1.5
